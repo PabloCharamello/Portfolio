@@ -6,6 +6,11 @@ import {
 import { Suspense } from "react";
 import { RoomPortfolio } from "./components/RoomPortfolio";
 import { Portal } from "./components/Portal";
+import { Rocks } from "./components/Rocks";
+import { FloatingRocks } from "./components/FloatingRocks";
+import { Trees } from "./components/Trees";
+import { Words } from "./components/Words";
+import { Grass } from "./components/Grass";
 
 export function SceneContainer() {
   return (
@@ -22,6 +27,11 @@ export function SceneContainer() {
 
       <RoomPortfolio />
       <Portal />
+      <Rocks />
+      <FloatingRocks />
+      <Trees />
+      <Words />
+      <Grass />
     </Suspense>
   );
 }
