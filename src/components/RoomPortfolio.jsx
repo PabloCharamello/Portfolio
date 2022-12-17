@@ -4,8 +4,7 @@ import { BufferAttribute, Color } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
 
 export function RoomPortfolio() {
-  const gltf = useLoader(GLTFLoader, "/models/floating_island.glb");
-  console.log(gltf);
+  const gltf = useLoader(GLTFLoader, "/models/roomPortfolio13.glb");
 
   useEffect(() => {
     if (!gltf) return;

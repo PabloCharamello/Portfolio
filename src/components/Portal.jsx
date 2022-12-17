@@ -6,7 +6,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
 export function Portal() {
   const model = useLoader(GLTFLoader, "../../public/models/portal.glb");
   const mask = useLoader(GLTFLoader, "../../public/models/portal_mask.glb");
-  console.log(model);
+
   useEffect(() => {
     if (!model) return;
 
