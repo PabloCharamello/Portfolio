@@ -2,6 +2,7 @@ import {
   OrbitControls,
   PerspectiveCamera,
   Environment,
+  Float,
 } from "@react-three/drei";
 import { Suspense } from "react";
 import { RoomPortfolio } from "./components/RoomPortfolio";
@@ -25,13 +26,15 @@ export function SceneContainer() {
       />
       <OrbitControls target={[1, 5, 0]} maxPolarAngle={Math.PI * 0.5} />
 
-      <RoomPortfolio />
-      <Portal />
-      <Rocks />
-      <FloatingRocks />
-      <Trees />
-      <Words />
-      <Grass />
+      <Float speed={0.5} rotationIntensity={0.6} floatIntensity={0.6}>
+        <RoomPortfolio />
+        <Portal />
+        <Rocks />
+        <FloatingRocks />
+        <Trees />
+        <Words />
+        <Grass />
+      </Float>
     </Suspense>
   );
 }
