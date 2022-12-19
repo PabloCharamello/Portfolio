@@ -26,6 +26,7 @@ import { BlendFunction, Resizer, KernelSize } from "postprocessing";
 import { Color, CylinderGeometry, Mesh, MeshBasicMaterial } from "three";
 import { SceneParticles } from "./components/SceneParticles";
 import { Room } from "./components/Room";
+import { HugeScreen } from "./components/HugeScreen";
 
 let lightColor = new Color(1, 0.2, 0.1);
 let mesh = new Mesh(
@@ -52,6 +53,8 @@ export function SceneContainer() {
         position={[-1.75, 10.85, 20.35]}
       />
       <OrbitControls target={[1, 5, 0]} maxPolarAngle={Math.PI * 0.5} />
+
+      <HugeScreen />
 
       <Float speed={0.5} rotationIntensity={0.6} floatIntensity={0.6}>
         <SpotLight
