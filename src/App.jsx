@@ -3,9 +3,11 @@ import { SceneContainer } from "./SceneContainer";
 
 function App() {
   return (
-    <Canvas>
-      <SceneContainer />
-    </Canvas>
+    <>
+      <Canvas>
+        <SceneContainer />
+      </Canvas>
+    </>
   );
 }
 
