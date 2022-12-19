@@ -7,9 +7,3 @@ body,
   margin: 0;
   overflow: hidden;
 }
-
-.main-container {
-  background-color: white;
-  width: 415px;
-  height: 227px;
-}
