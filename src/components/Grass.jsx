@@ -4,7 +4,10 @@ import { Color, DoubleSide } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
 
 export function Grass() {
-  const gltf = useLoader(GLTFLoader, "../../public/models/grass.glb");
+  const gltf = useLoader(
+    GLTFLoader,
+    import.meta.env.BASE_URL + "public/models/grass.glb"
+  );
 
   useEffect(() => {
     if (!gltf) return;

@@ -4,7 +4,9 @@ import { MainPage } from "./ElementsPortfolio/MainPage";
 
 export function HugeScreen(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/models/hugeScreen.glb");
+  const { nodes, materials, animations } = useGLTF(
+    import.meta.env.BASE_URL + "public/models/hugeScreen.glb"
+  );
   const { actions } = useAnimations(animations, group);
   return (
     <group {...props} dispose={null}>

@@ -26,7 +26,7 @@ export function Words() {
         position={[3.5, 6, 0]}
       >
         <Text3D
-          font={"../../public/fonts/Roboto_Regular.json"}
+          font={import.meta.env.BASE_URL + "public/fonts/Roboto_Regular.json"}
           size={0.575}
           height={0.085}
           curveSegments={12}

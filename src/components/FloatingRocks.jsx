@@ -5,15 +5,15 @@ import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
 export function FloatingRocks() {
   const rock1 = useLoader(
     GLTFLoader,
-    "../../public/models/floating_rock_1.glb"
+    import.meta.env.BASE_URL + "public/models/floating_rock_1.glb"
   );
   const rock2 = useLoader(
     GLTFLoader,
-    "../../public/models/floating_rock_2.glb"
+    import.meta.env.BASE_URL + "public/models/floating_rock_2.glb"
   );
   const rock3 = useLoader(
     GLTFLoader,
-    "../../public/models/floating_rock_3.glb"
+    import.meta.env.BASE_URL + "public/models/floating_rock_3.glb"
   );
 
   return (
