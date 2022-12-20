@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useGLTF, useAnimations, Html } from "@react-three/drei";
+import { MainPage } from "./ElementsPortfolio/MainPage";
 
 export function HugeScreen(props) {
   const group = useRef();
@@ -23,10 +24,8 @@ export function HugeScreen(props) {
         rotation={[0, 0.69, 0]}
         scale={[0.95, 1.14, 0.7]}
       >
-        <Html transform occlude>
-          <div>
-            <p className="main-container">Hola!</p>
-          </div>
+        <Html transform occlude className="main-container">
+          <MainPage />
         </Html>
       </mesh>
     </group>
