@@ -3,10 +3,7 @@ import { useEffect } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
 
 export function Trees() {
-  const gltf = useLoader(
-    GLTFLoader,
-    import.meta.env.BASE_URL + "public/models/trees.glb"
-  );
+  const gltf = useLoader(GLTFLoader, "../../public/models/trees.glb");
 
   useEffect(() => {
     if (!gltf) return;
