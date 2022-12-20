@@ -15,7 +15,7 @@ import { FillQuad } from "./FillQuad";
 
 const scene = new Scene();
 scene.background = new TextureLoader().load(
-  import.meta.env.BASE_URL + "public/textures/galaxy.jpg",
+  "/textures/galaxy.jpg",
   (texture) => {
     texture.encoding = LinearEncoding;
     texture.mapping = EquirectangularReflectionMapping;
