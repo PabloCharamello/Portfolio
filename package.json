@@ -18,6 +18,7 @@
     "lottie-react": "^2.3.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-three-fiber-cambrian": "^4.0.18",
     "three": "^0.142.0",
     "vite-plugin-environment": "^1.1.3"
   },
