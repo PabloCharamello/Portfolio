@@ -69,7 +69,7 @@ export function SceneContainer() {
 
           <Portal />
           <Rocks />
-          {/* <FloatingIsland /> */}
+          <FloatingIsland />
           <Trees />
           <Words />
           <Grass />
@@ -78,7 +78,7 @@ export function SceneContainer() {
 
         <FloatingRocks />
 
-        {/* <EffectComposer stencilBuffer={true}>
+        <EffectComposer stencilBuffer={true}>
           <DepthOfField
             // focusDistance={0.012}
             focalLength={0.05}
@@ -104,7 +104,7 @@ export function SceneContainer() {
             kernelSize={KernelSize.SMALL}
             blur={true}
           />
-        </EffectComposer> */}
+        </EffectComposer>
       </Suspense>
     </>
   );

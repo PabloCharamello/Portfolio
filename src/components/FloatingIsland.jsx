@@ -4,7 +4,7 @@ import { BufferAttribute, Color } from "three";
 import { GLTFLoader } from "three-stdlib";
 
 export function FloatingIsland() {
-  const gltf = useLoader(GLTFLoader, "/models/floating_island2.glb");
+  const gltf = useLoader(GLTFLoader, "/models/floating_island.glb");
 
   useEffect(() => {
     if (!gltf) return;
