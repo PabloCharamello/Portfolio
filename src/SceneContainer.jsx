@@ -69,7 +69,7 @@ export function SceneContainer() {
 
           <Portal />
           <Rocks />
-          <FloatingIsland />
+          {/* <FloatingIsland /> */}
           <Trees />
           <Words />
           <Grass />
