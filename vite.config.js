@@ -7,4 +7,13 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 1600,
   },
+  rollupOptions: {
+    // Add _all_ external dependencies here
+    external: ["GLTFLoader"],
+    output: {
+      globals: {
+        GLTFLoader: "GLTFLoader",
+      },
+    },
+  },
 });
