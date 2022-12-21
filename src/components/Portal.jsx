@@ -12,7 +12,7 @@ import {
 } from "three";
 import { GLTFLoader } from "three-stdlib";
 
-// import { FillQuad } from "./FillQuad";
+import { FillQuad } from "./FillQuad";
 
 const scene = new Scene();
 scene.background = new TextureLoader().load(
@@ -58,7 +58,7 @@ export function Portal() {
     <>
       <primitive object={model.scene} />
       <primitive object={mask.scene} />
-      {/* <FillQuad map={target.texture} maskId={1} /> */}
+      <FillQuad map={target.texture} maskId={1} />
     </>
   );
 }
