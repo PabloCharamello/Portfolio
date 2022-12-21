@@ -43,64 +43,69 @@ mesh.scale.set(1.5, 1, 1);
 
 export function SceneContainer() {
   return (
-    <Suspense fallback={null}>
-      <Environment background={"only"} files={"textures/bg.hdr"} />
-      <Environment background={false} files={"textures/envmap.hdr"} />
-      <PerspectiveCamera makeDefault fov={50} position={[1.75, 10.85, 24.35]} />
-      <OrbitControls target={[1, 5, 0]} maxPolarAngle={Math.PI * 0.5} />
+    <>
       <HugeScreen />
-      <Float speed={0.5} rotationIntensity={0.6} floatIntensity={0.6}>
-        <SpotLight
-          penumbra={1}
-          distance={500}
-          angle={60.65}
-          attenuation={1}
-          anglePower={3}
-          intensity={2.3}
-          color={lightColor}
-          position={[1.19, 10.85, -4.45]}
-          target-position={[0, 0, -1]}
+      <Suspense fallback={null}>
+        <Environment background={"only"} files={"textures/bg.hdr"} />
+        <Environment background={false} files={"textures/envmap.hdr"} />
+        <PerspectiveCamera
+          makeDefault
+          fov={50}
+          position={[1.75, 10.85, 24.35]}
         />
+        <OrbitControls target={[1, 5, 0]} maxPolarAngle={Math.PI * 0.5} />
+        <Float speed={0.5} rotationIntensity={0.6} floatIntensity={0.6}>
+          <SpotLight
+            penumbra={1}
+            distance={500}
+            angle={60.65}
+            attenuation={1}
+            anglePower={3}
+            intensity={2.3}
+            color={lightColor}
+            position={[1.19, 10.85, -4.45]}
+            target-position={[0, 0, -1]}
+          />
 
-        <Portal />
-        <Rocks />
-        {/* <Room /> */}
-        <FloatingIsland />
-        <Trees />
-        <Words />
-        <Grass />
-        <SceneParticles />
-      </Float>
+          <Portal />
+          <Rocks />
+          <FloatingIsland />
+          <Trees />
+          <Words />
+          <Grass />
+          <SceneParticles />
+        </Float>
 
-      <FloatingRocks />
+        <FloatingRocks />
 
-      <EffectComposer stencilBuffer={true}>
-        <DepthOfField
-          // focusDistance={0.012}
-          focalLength={0.05}
-          bokehScale={3}
-        />
-        <HueSaturation hue={0} saturation={-0.15} />
-        <BrightnessContrast brightness={0.0} contrast={0.035} />
-        <ChromaticAberration
-          radialModulation={true}
-          offset={[0.00175, 0.00175]}
-        />
-        <GodRays
-          sun={mesh}
-          blendFunction={BlendFunction.screen}
-          samples={40}
-          density={0.97}
-          decay={0.97}
-          weight={0.6}
-          exposure={0.3}
-          clampMax={1}
-          width={Resizer.AUTO_SIZE}
-          height={Resizer.AUTO_SIZE}
-          kernelSize={KernelSize.SMALL}
-          blur={true}
-        />
-      </EffectComposer>
-    </Suspense>
+        {/* <EffectComposer stencilBuffer={true}>
+          <DepthOfField
+            // focusDistance={0.012}
+            focalLength={0.05}
+            bokehScale={3}
+          />
+          <HueSaturation hue={0} saturation={-0.15} />
+          <BrightnessContrast brightness={0.0} contrast={0.035} />
+          <ChromaticAberration
+            radialModulation={true}
+            offset={[0.00175, 0.00175]}
+          />
+          <GodRays
+            sun={mesh}
+            blendFunction={BlendFunction.screen}
+            samples={40}
+            density={0.97}
+            decay={0.97}
+            weight={0.6}
+            exposure={0.3}
+            clampMax={1}
+            width={Resizer.AUTO_SIZE}
+            height={Resizer.AUTO_SIZE}
+            kernelSize={KernelSize.SMALL}
+            blur={true}
+          />
+        </EffectComposer> */}
+      </Suspense>
+    </>
   );
 }

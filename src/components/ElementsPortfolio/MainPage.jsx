@@ -4,10 +4,20 @@ export function MainPage() {
   const { scrollYProgress } = useScroll();
   return (
     <div>
-      <h2 className="titles">
+      <motion.h2
+        initial={{ x: 400 }}
+        animate={{ x: 0 }}
+        exit={{ x: 0 }}
+        className="titles"
+      >
         Admiro a las personas que pueden diseñar e implementar.
-      </h2>
-      <p className="paragraphs">
+      </motion.h2>
+      <motion.p
+        className="paragraphs"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 1 }}
+      >
         Quiero convertirme en una persona que pueda implementar gráficos e
         interfaces de usuario que innoven y hacer que realmente funcionen.{" "}
         <br />
@@ -16,8 +26,13 @@ export function MainPage() {
         manejar ambos junto a un gran equipo que lo de todo, con compromiso y
         respeto por los colaboradores y los proyectos que se nos pongan al
         frente.
-      </p>
-      <motion.h2 initial={{ x: -200 }} animate={{ x: 0 }} className="titles">
+      </motion.p>
+      <motion.h2
+        className="titles"
+        initial={{ x: 700 }}
+        animate={{ x: 0 }}
+        exit={{ x: 0 }}
+      >
         Me gustan las interacciónes animadas!
       </motion.h2>
       <p className="paragraphs">
