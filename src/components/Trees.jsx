@@ -1,6 +1,6 @@
 import { useLoader } from "@react-three/fiber";
 import { useEffect } from "react";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "three-stdlib";
 
 export function Trees() {
   const gltf = useLoader(GLTFLoader, "/models/trees.glb");

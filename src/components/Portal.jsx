@@ -10,7 +10,8 @@ import {
   DoubleSide,
   LinearEncoding,
 } from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "three-stdlib";
+
 import { FillQuad } from "./FillQuad";
 
 const scene = new Scene();

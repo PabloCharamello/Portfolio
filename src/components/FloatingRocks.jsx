@@ -1,6 +1,6 @@
 import { Float } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "three-stdlib";
 
 export function FloatingRocks() {
   const rock1 = useLoader(GLTFLoader, "/models/floating_rock_1.glb");

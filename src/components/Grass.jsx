@@ -1,7 +1,7 @@
 import { useLoader } from "@react-three/fiber";
 import { useEffect } from "react";
 import { Color, DoubleSide } from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/gltfloader";
+import { GLTFLoader } from "three-stdlib";
 
 export function Grass() {
   const gltf = useLoader(GLTFLoader, "/models/grass.glb");
