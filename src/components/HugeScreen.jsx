@@ -32,4 +32,4 @@ export function HugeScreen(props) {
   );
 }
 
-useGLTF.preload("/hugeScreen.glb");
+// useGLTF.preload("/hugeScreen.glb");
