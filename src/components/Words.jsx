@@ -16,7 +16,7 @@ export function Words() {
           curveSegments={12}
           rotation={[0, -0.345, -0.05]}
         >
-          Pablo Charamello
+          Full Stack Developer
           <meshStandardMaterial color={[1, 0.15, 0.1]} emissive={[1, 0.1, 0]} />
         </Text3D>
       </Float>
@@ -32,7 +32,7 @@ export function Words() {
           curveSegments={12}
           rotation={[0, -0.35, -0.05]}
         >
-          Full Stack Developer
+          Pablo Charamello
           <meshStandardMaterial color={[1, 0.15, 0.1]} emissive={[1, 0.1, 0]} />
         </Text3D>
       </Float>
