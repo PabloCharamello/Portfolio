@@ -26,6 +26,7 @@ import { BlendFunction, Resizer, KernelSize } from "postprocessing";
 import { Color, CylinderGeometry, Mesh, MeshBasicMaterial } from "three";
 import { SceneParticles } from "./components/SceneParticles";
 import { HugeScreen } from "./components/HugeScreen";
+import { ObjectsMainScene } from "./components/ObjectsMainScene";
 
 let lightColor = new Color(1, 0.2, 0.1);
 let mesh = new Mesh(
@@ -70,6 +71,7 @@ export function SceneContainer() {
           <Portal />
           <Rocks />
           <FloatingIsland />
+          <ObjectsMainScene />
           <Trees />
           <Words />
           <Grass />

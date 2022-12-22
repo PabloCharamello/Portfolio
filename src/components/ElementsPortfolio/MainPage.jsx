@@ -1,5 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import LandingPageLottie from "./lottieComponents/landingPageLottie";
+import ScrollDown from "./lottieComponents/ScrollDown";
 import WellcomeAll from "./lottieComponents/WellcomeAll";
 
 export function MainPage() {
@@ -9,6 +10,7 @@ export function MainPage() {
       <div>
         <WellcomeAll />
         <LandingPageLottie />
+        <ScrollDown />
       </div>
       <div>
         <motion.h2
