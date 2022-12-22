@@ -62,7 +62,9 @@ function init() {
 
   const loadingManager = new THREE.LoadingManager(() => {
     const loadingScreen = document.getElementById("loading-screen");
-    loadingScreen.classList.add("fade-out");
+    setTimeout(() => {
+      loadingScreen.classList.add("fade-out");
+    }, "7000");
 
     // optional: remove loader from DOM via event listener
     loadingScreen.addEventListener("transitionend", onTransitionEnd);
