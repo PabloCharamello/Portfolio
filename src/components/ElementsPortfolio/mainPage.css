@@ -19,28 +19,28 @@
 
 .soundBigScreen1 {
   position: absolute;
-  left: -80px;
+  left: -87px;
   top: 1.2rem;
   width: 90px;
 }
 
 .soundBigScreen2 {
   position: absolute;
-  left: -80px;
+  left: -87px;
   top: 7rem;
   width: 90px;
 }
 
 .soundBigScreen3 {
   position: absolute;
-  right: -80px;
+  right: -87px;
   top: 1.2rem;
   width: 90px;
 }
 
 .soundBigScreen4 {
   position: absolute;
-  right: -80px;
+  right: -87px;
   top: 7rem;
   width: 90px;
 }
