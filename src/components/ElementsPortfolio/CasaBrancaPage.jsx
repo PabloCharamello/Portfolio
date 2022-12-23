@@ -14,7 +14,7 @@ export function CasaBrancaPage() {
           <img
             src="/img/CasaBranca.jpg"
             alt="casa Branca page"
-            className="casa-branca"
+            className="front-page"
           />
         </a>
       </div>
