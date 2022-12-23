@@ -15,13 +15,10 @@ import { GLTFLoader } from "three-stdlib";
 import { FillQuad } from "./FillQuad";
 
 const scene = new Scene();
-scene.background = new TextureLoader().load(
-  "/textures/galaxy.jpg",
-  (texture) => {
-    texture.encoding = LinearEncoding;
-    texture.mapping = EquirectangularReflectionMapping;
-  }
-);
+scene.background = new TextureLoader().load("/textures/yo.jpg", (texture) => {
+  texture.encoding = LinearEncoding;
+  texture.mapping = EquirectangularReflectionMapping;
+});
 
 const target = new WebGLRenderTarget(window.innerWidth, window.innerHeight);
 
