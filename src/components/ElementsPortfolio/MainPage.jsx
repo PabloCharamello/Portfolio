@@ -9,8 +9,8 @@ export function MainPage() {
   return (
     <>
       <div>
-        <WellcomeAll />
         <LandingPageLottie />
+        <WellcomeAll />
         <ScrollDown />
         <SoundBigScreen />
       </div>

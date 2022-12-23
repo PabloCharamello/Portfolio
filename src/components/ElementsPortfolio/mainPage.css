@@ -1,12 +1,14 @@
 .landingPageLottie {
   display: flex;
   justify-content: center;
-  margin-bottom: -60px;
+  margin-bottom: 0px;
+  margin-top: -70px;
 }
 
 .wellcome-all {
   display: flex;
   justify-content: center;
+  margin-top: -40px;
 }
 
 .scrollDown {
