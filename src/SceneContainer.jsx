@@ -10,6 +10,7 @@ import { Suspense } from "react";
 import { FloatingIsland } from "./components/FloatingIsland";
 import { Portal } from "./components/Portal";
 import { Rocks } from "./components/Rocks";
+import { Plant } from "./components/Plant";
 import { FloatingRocks } from "./components/FloatingRocks";
 import { Trees } from "./components/Trees";
 import { Words } from "./components/Words";
@@ -70,6 +71,7 @@ export function SceneContainer() {
 
           <Portal />
           <Rocks />
+          <Plant />
           <FloatingIsland />
           <ObjectsMainScene />
           <Trees />
