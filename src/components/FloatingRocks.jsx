@@ -1,11 +1,14 @@
-import { Float } from "@react-three/drei";
+import { Float, SpotLight } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
+import { Color } from "three";
 import { GLTFLoader } from "three-stdlib";
+
+let lightColor = new Color(2, 0.5, 0.1);
 
 export function FloatingRocks() {
   const rock1 = useLoader(GLTFLoader, "/models/floating_rock_1.glb");
   const rock2 = useLoader(GLTFLoader, "/models/floating_rock_2.glb");
-  const rock3 = useLoader(GLTFLoader, "/models/floating_rock_3.glb");
+  const rock3 = useLoader(GLTFLoader, "/models/floating_rock_3-2.glb");
 
   return (
     <>
@@ -26,14 +29,8 @@ export function FloatingRocks() {
       >
         <primitive object={rock1.scene} />
       </Float>
-      <Float
-        speed={1.5}
-        rotationIntensity={1.1}
-        floatIntensity={0}
-        position={[20, 3.5, -9]}
-      >
-        <primitive object={rock3.scene} />
-      </Float>
+
+      <primitive object={rock3.scene} position={[20, 3.5, -9]} />
     </>
   );
 }
