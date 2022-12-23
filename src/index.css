@@ -11,8 +11,8 @@ body,
 
 .main-container {
   background-color: rgb(16, 16, 16);
-  width: 416px;
-  height: 226px;
+  width: 26rem;
+  height: 14.125rem;
   overflow-y: auto;
   overflow-x: hidden;
 }
