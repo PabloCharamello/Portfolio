@@ -2,7 +2,7 @@ import { useScroll } from "framer-motion";
 
 import ScrollDown from "./lottieComponents/ScrollDown";
 
-export function CasaBrancaPage() {
+export function HackDesignPage() {
   const { scrollYProgress } = useScroll();
   return (
     <>
@@ -10,11 +10,11 @@ export function CasaBrancaPage() {
         <ScrollDown />
       </div>
       <div>
-        <a href="https://casa-branca.vercel.app/" target="_blank">
+        <a href="https://hackdesign.vercel.app/" target="_blank">
           <img
-            src="/img/CasaBranca.jpg"
-            alt="casa Branca page"
-            className="casa-branca"
+            src="/img/HackDesign.jpg"
+            alt="Hack Design page"
+            className="front-page"
           />
         </a>
       </div>

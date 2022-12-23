@@ -30,6 +30,7 @@ import { HugeScreen } from "./components/HugeScreen";
 import { ObjectsMainScene } from "./components/ObjectsMainScene";
 import { StereoHugeScreen } from "./components/StereoHugeScreen";
 import { CasaBrancaScreen } from "./components/CasaBrancaScreen";
+import { HackDesignScreen } from "./components/HackDesignScreen";
 
 let lightColor = new Color(1, 0.2, 0.1);
 let mesh = new Mesh(
@@ -50,6 +51,7 @@ export function SceneContainer() {
     <>
       <HugeScreen />
       <CasaBrancaScreen />
+      <HackDesignScreen />
       <StereoHugeScreen />
       <Suspense fallback={null}>
         <Environment background={"only"} files={"textures/bg.hdr"} />

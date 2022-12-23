@@ -1,13 +1,12 @@
 import React, { useRef } from "react";
-import { useGLTF, useAnimations, Html } from "@react-three/drei";
-import { CasaBrancaPage } from "./ElementsPortfolio/CasaBrancaPage";
-
-export function CasaBrancaScreen(props) {
+import { useGLTF, Html } from "@react-three/drei";
+import { HackDesignPage } from "./ElementsPortfolio/HackDesignPage";
+export function HackDesignScreen(props) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "/models/casaBrancaScreen.glb"
+    "/models/hackDesignScreen.glb"
   );
-  const { actions } = useAnimations(animations, group);
+
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -15,12 +14,13 @@ export function CasaBrancaScreen(props) {
         receiveShadow
         // geometry={nodes.Pantalla001.geometry}
         // material={nodes.Pantalla001.material}
-        position={[26.24, 14.3, -8.5]}
+
+        position={[26.24, 8.3, -8.5]}
         rotation={[0, -0.38, 0]}
         scale={[0.71, 0.86, 0.53]}
       >
         <Html transform occlude className="main-container">
-          <CasaBrancaPage />
+          <HackDesignPage />
         </Html>
       </mesh>
       <mesh
@@ -28,7 +28,7 @@ export function CasaBrancaScreen(props) {
         receiveShadow
         geometry={nodes.PantallaGigante001.geometry}
         material={materials["BordePantalla.001"]}
-        position={[26.24, 14.3, -8.5]}
+        position={[26.24, 8.3, -8.5]}
         rotation={[0, -0.38, 0]}
         scale={[0.71, 0.86, 0.53]}
       />
