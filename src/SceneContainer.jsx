@@ -28,6 +28,7 @@ import { Color, CylinderGeometry, Mesh, MeshBasicMaterial } from "three";
 import { SceneParticles } from "./components/SceneParticles";
 import { HugeScreen } from "./components/HugeScreen";
 import { ObjectsMainScene } from "./components/ObjectsMainScene";
+import { StereoHugeScreen } from "./components/StereoHugeScreen";
 
 let lightColor = new Color(1, 0.2, 0.1);
 let mesh = new Mesh(
@@ -47,6 +48,7 @@ export function SceneContainer() {
   return (
     <>
       <HugeScreen />
+      <StereoHugeScreen />
       <Suspense fallback={null}>
         <Environment background={"only"} files={"textures/bg.hdr"} />
         <Environment background={false} files={"textures/envmap.hdr"} />
