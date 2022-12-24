@@ -112,4 +112,11 @@
 .github-icon {
   color: rgb(247, 229, 155);
   margin-bottom: -14px;
+  border-radius: 50px;
+  transition: 0.15s;
+}
+
+.github-icon:hover {
+  color: orange;
+  box-shadow: 0 0 3px 1px orange;
 }
