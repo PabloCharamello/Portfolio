@@ -17,7 +17,7 @@ export function MainPage() {
         <SoundBigScreen />
       </div>
       <div>
-        <div>
+        <div className="paragraphs-titles">
           <p className="introduction">
             Hola y bienvenidos!, mi nombre es Pablo Charamello y soy un nuevo
             desarrollador full stack apasionado y motivado por cada tecnología y
