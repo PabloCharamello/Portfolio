@@ -57,9 +57,9 @@ export function SceneContainer() {
         <PerspectiveCamera
           makeDefault
           fov={50}
-          position={[-10.75, 13.85, 20.35]}
+          position={[-6.75, 12.85, 23.35]}
         />
-        <OrbitControls target={[-8, 8, 8]} maxPolarAngle={Math.PI * 0.5} />
+        <OrbitControls target={[-9.5, 8, 8]} maxPolarAngle={Math.PI * 0.5} />
         <Float speed={0.5} rotationIntensity={0.6} floatIntensity={0.6}>
           <SpotLight
             penumbra={1}

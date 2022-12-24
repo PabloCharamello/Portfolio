@@ -79,11 +79,12 @@
   object-fit: content;
   width: 25.5rem;
   height: 11.125rem;
-  transition: 0.15s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .front-pages:hover {
   filter: brightness(150%);
+  scale: 105%;
 }
 
 .titles-container {

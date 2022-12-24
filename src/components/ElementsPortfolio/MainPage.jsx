@@ -21,10 +21,10 @@ export function MainPage() {
           <p className="introduction">
             Hola y bienvenidos!, mi nombre es Pablo Charamello y soy un nuevo
             desarrollador full stack apasionado y motivado por cada tecnología y
-            los resultados de implementarlas. <br />
+            los resultados de su implementación. <br />
             Comenzando me encontré en un abismo de información donde tuve que
-            entender que todo tiene un proceso y que cada uno tenemos un tiempo
-            para aprender y asimilar la información que recibimos. <br />
+            entender que todo tiene un proceso y un tiempo para aprender y
+            asimilar la información que recibimos. <br />
             Por eso ahora más motivado que nunca creo proyectos de todo tipo
             para repasar e ir bajando toda la información de cada tecnología a
             medida que puedo. <br /> ESTOY ABIERTO A PROPUESTAS LABORALES DE
@@ -90,11 +90,11 @@ export function MainPage() {
             </span>
           </h2>
           <p className="paragraphs">
-            Casa Branca es un proyecto que utlicé para aprender a utilizar
+            Casa Branca es un proyecto que realicé para aprender a utilizar
             Tailwindcss, firebase, framer motion, threeJs, lottie, useContext
             entre muchas otras tecnologías con React.js. <br /> Me pareció buena
             idea para implementarlo todo en una sola app y decidí crear éste
-            ecommerce interactivo.
+            ecommerce lleno de animaciónes e interacciones.
           </p>
         </div>
         <div className="front-page-container">
@@ -119,13 +119,14 @@ export function MainPage() {
             </span>
           </h2>
           <p className="paragraphs">
-            Hack Design es un proyecto desarrollado por mi y 2 estudiantes más
-            de un Bootcamp ultra intensivo en Hack Academy. <br /> Se creó en un
-            periodo de tres semanas como proyecto final e integrador donde se
-            ponían en práctica todos los conocimientos adquiridos durante el
-            curso, sumando más de 600 horas de formación en 3 meses. <br /> Ha
-            sido una oportunidad para aprender sobre el fenomenal mundo del
-            desarrollo web.
+            Hack Design es el proyecto final del bootcamp ultra intensivo que
+            realicé en Hack Academy,desarrollado por mis 2 colegas de equipo y
+            yo.
+            <br /> Se creó en un periodo de tres semanas como proyecto final e
+            integrador donde se pusieron en práctica todos los conocimientos
+            adquiridos durante el curso, sumando más de 600 horas de formación
+            en 3 meses. <br /> Ha sido una oportunidad para aprender sobre el
+            fenomenal mundo del desarrollo web.
           </p>
         </div>
         <div className="front-page-container">
@@ -151,9 +152,9 @@ export function MainPage() {
           </h2>
           <p className="paragraphs">
             HackFlix es la vieja y querida app de peliculas. Ésta vez mi version
-            realizada con React.js. Fue mi primer app completa y le faltan
-            muchas cosas pero el diseño me dejó bastante conforme. <br /> P.D:
-            No es responsive, es desktop o para tablet. La realicé en el
+            realizada con React.js. Fue mi primer app y le faltan muchas cosas
+            pero el diseño me dejó bastante conforme. <br /> P.D: No es
+            responsive, es desktop o para tablet. <br /> La realicé en el
             transcurso del pasado bootcamp como uno de los primeros ejercicios.
           </p>
         </div>
