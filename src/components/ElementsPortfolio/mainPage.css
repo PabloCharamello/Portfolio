@@ -86,24 +86,30 @@
   box-shadow: 0 0 10px 2px ORANGE;
 }
 
+.projects {
+  z-index: -1;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
 .my-projects-container {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 5px 5px orange;
+  /* box-shadow: 0 0 2px 2px orange; */
   height: 50px;
   padding-bottom: 5px;
   margin-top: 3rem;
-  border-radius: 40%;
 }
 
 .my-projects {
   color: rgb(247, 229, 155);
-  font-size: 30px;
+  font-size: 23px;
   margin-top: 30px;
   margin-bottom: 30px;
   text-decoration: underline;
+  z-index: 2;
 }
 
 .project-titles {

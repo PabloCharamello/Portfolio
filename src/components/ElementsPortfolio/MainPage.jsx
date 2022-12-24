@@ -4,6 +4,7 @@ import ScrollDown from "./lottieComponents/ScrollDown";
 import SoundBigScreen from "./lottieComponents/SoundBigScreen";
 import WellcomeAll from "./lottieComponents/WellcomeAll";
 import { DiGithubAlt } from "react-icons/di";
+import Projects from "./lottieComponents/Projects";
 
 export function MainPage() {
   const { scrollYProgress } = useScroll();
@@ -68,6 +69,7 @@ export function MainPage() {
         <div className="my-projects-container">
           <h2 className="my-projects">Mis Proyectos</h2>
         </div>
+        <Projects />
         <div>
           <h2 className="project-titles">
             Casa Branca{" "}
