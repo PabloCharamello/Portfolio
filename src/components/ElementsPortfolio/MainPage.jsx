@@ -19,19 +19,12 @@ export function MainPage() {
       <div>
         <div className="paragraphs-titles">
           <motion.h2
-            initial={{ x: 400 }}
+            initial={{ x: 700 }}
             animate={{ x: 0 }}
             exit={{ x: 0 }}
             className="paragraphs-titles"
           >
-            <motion.h2
-              initial={{ x: 700 }}
-              animate={{ x: 0 }}
-              exit={{ x: 0 }}
-              className="paragraphs-titles"
-            >
-              Admiro a las personas que pueden diseñar e implementar.
-            </motion.h2>
+            Admiro a las personas que pueden diseñar e implementar.
           </motion.h2>
 
           <motion.p
