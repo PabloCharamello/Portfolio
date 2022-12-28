@@ -16,6 +16,116 @@ export function MainPage() {
         <ScrollDown />
         <SoundBigScreen />
       </div>
+      <div className="my-projects-container">
+        <h2 className="my-projects">Mis Proyectos</h2>
+      </div>
+      <Projects />
+      <div>
+        <h2 className="project-titles">
+          Casa Branca{" "}
+          <span>
+            <a
+              href="https://github.com/PabloCharamello/Casa_Branca"
+              target="_blank"
+            >
+              <DiGithubAlt size="3.5rem" className="github-icon" />
+            </a>
+          </span>
+        </h2>
+        <p className="paragraphs">
+          Casa Branca es un proyecto que realicé para aprender a utilizar
+          Tailwindcss, firebase, framer motion, threeJs, lottie, useContext
+          entre muchas otras tecnologías con React.js. <br /> Me pareció buena
+          idea para implementarlo todo en una sola app y decidí crear éste
+          ecommerce lleno de animaciónes e interacciones.
+        </p>
+      </div>
+      <div>
+        <h2 className="project-titles">
+          Nike Store{" "}
+          <span>
+            <a
+              href="https://github.com/PabloCharamello/NikeStore"
+              target="_blank"
+            >
+              <DiGithubAlt size="3.5rem" className="github-icon" />
+            </a>
+          </span>
+        </h2>
+        <p className="paragraphs">
+          Nike Store es un proyecto realizado con Tailwindcss, y redux/toolkit
+          con Slices para manejar la lógica del carrito.
+        </p>
+      </div>
+      <div className="front-page-container">
+        <a href="https://nikestore-pablocharamello.vercel.app/" target="_blank">
+          <img
+            src="/img/NikeStore.jpg"
+            alt="nike store page"
+            className="front-pages"
+          />
+        </a>
+      </div>
+      <div>
+        <h2 className="project-titles">
+          Hack Design{" "}
+          <span>
+            <a
+              href="https://github.com/PabloCharamello/Final-project-Ecommerce-Front-Team1"
+              target="_blank"
+            >
+              <DiGithubAlt size="3.5rem" className="github-icon" />
+            </a>
+          </span>
+        </h2>
+        <p className="paragraphs">
+          Hack Design es el proyecto final del bootcamp ultra intensivo que
+          realicé en Hack Academy,desarrollado por mis 2 colegas de equipo y yo.
+          <br /> Se creó en un periodo de tres semanas como proyecto final e
+          integrador donde se pusieron en práctica todos los conocimientos
+          adquiridos durante el curso, sumando más de 600 horas de formación en
+          3 meses. <br /> Ha sido una oportunidad para aprender sobre el
+          fenomenal mundo del desarrollo web.
+        </p>
+      </div>
+      <div className="front-page-container">
+        <a href="https://hackdesign.vercel.app/" target="_blank">
+          <img
+            src="/img/HackDesign.jpg"
+            alt="Hack Design page"
+            className="front-pages"
+          />
+        </a>
+      </div>
+      <div>
+        <h2 className="project-titles">
+          Hack Flix{" "}
+          <span>
+            <a
+              href="https://github.com/PabloCharamello/HackFlix"
+              target="_blank"
+            >
+              <DiGithubAlt size="3.5rem" className="github-icon" />
+            </a>
+          </span>
+        </h2>
+        <p className="paragraphs">
+          HackFlix es la vieja y querida app de peliculas. Ésta vez mi version
+          realizada con React.js. Fue mi primer app y le faltan muchas cosas
+          pero el diseño me dejó bastante conforme. <br /> P.D: No es
+          responsive, es desktop o para tablet. <br /> La realicé en el
+          transcurso del pasado bootcamp como uno de los primeros ejercicios.
+        </p>
+      </div>
+      <div className="front-page-container">
+        <a href="https://hack-flix.vercel.app/" target="_blank">
+          <img
+            src="/img/HackFlix.jpg"
+            alt="Hack Flix page"
+            className="front-pages"
+          />
+        </a>
+      </div>
       <div>
         <div className="paragraphs-titles">
           <p className="introduction">
@@ -71,101 +181,6 @@ export function MainPage() {
             que la belleza de lo digital es que puedes tener un "diálogo con las
             cosas", donde el producto responde a tus acciones.
           </p>
-        </div>
-
-        <div className="my-projects-container">
-          <h2 className="my-projects">Mis Proyectos</h2>
-        </div>
-        <Projects />
-        <div>
-          <h2 className="project-titles">
-            Casa Branca{" "}
-            <span>
-              <a
-                href="https://github.com/PabloCharamello/Casa_Branca"
-                target="_blank"
-              >
-                <DiGithubAlt size="3.5rem" className="github-icon" />
-              </a>
-            </span>
-          </h2>
-          <p className="paragraphs">
-            Casa Branca es un proyecto que realicé para aprender a utilizar
-            Tailwindcss, firebase, framer motion, threeJs, lottie, useContext
-            entre muchas otras tecnologías con React.js. <br /> Me pareció buena
-            idea para implementarlo todo en una sola app y decidí crear éste
-            ecommerce lleno de animaciónes e interacciones.
-          </p>
-        </div>
-        <div className="front-page-container">
-          <a href="https://casa-branca.vercel.app/" target="_blank">
-            <img
-              src="/img/CasaBranca.jpg"
-              alt="casa Branca page"
-              className="front-pages"
-            />
-          </a>
-        </div>
-        <div>
-          <h2 className="project-titles">
-            Hack Design{" "}
-            <span>
-              <a
-                href="https://github.com/PabloCharamello/Final-project-Ecommerce-Front-Team1"
-                target="_blank"
-              >
-                <DiGithubAlt size="3.5rem" className="github-icon" />
-              </a>
-            </span>
-          </h2>
-          <p className="paragraphs">
-            Hack Design es el proyecto final del bootcamp ultra intensivo que
-            realicé en Hack Academy,desarrollado por mis 2 colegas de equipo y
-            yo.
-            <br /> Se creó en un periodo de tres semanas como proyecto final e
-            integrador donde se pusieron en práctica todos los conocimientos
-            adquiridos durante el curso, sumando más de 600 horas de formación
-            en 3 meses. <br /> Ha sido una oportunidad para aprender sobre el
-            fenomenal mundo del desarrollo web.
-          </p>
-        </div>
-        <div className="front-page-container">
-          <a href="https://hackdesign.vercel.app/" target="_blank">
-            <img
-              src="/img/HackDesign.jpg"
-              alt="Hack Design page"
-              className="front-pages"
-            />
-          </a>
-        </div>
-        <div>
-          <h2 className="project-titles">
-            Hack Flix{" "}
-            <span>
-              <a
-                href="https://github.com/PabloCharamello/HackFlix"
-                target="_blank"
-              >
-                <DiGithubAlt size="3.5rem" className="github-icon" />
-              </a>
-            </span>
-          </h2>
-          <p className="paragraphs">
-            HackFlix es la vieja y querida app de peliculas. Ésta vez mi version
-            realizada con React.js. Fue mi primer app y le faltan muchas cosas
-            pero el diseño me dejó bastante conforme. <br /> P.D: No es
-            responsive, es desktop o para tablet. <br /> La realicé en el
-            transcurso del pasado bootcamp como uno de los primeros ejercicios.
-          </p>
-        </div>
-        <div className="front-page-container">
-          <a href="https://hack-flix.vercel.app/" target="_blank">
-            <img
-              src="/img/HackFlix.jpg"
-              alt="Hack Flix page"
-              className="front-pages"
-            />
-          </a>
         </div>
       </div>
     </>

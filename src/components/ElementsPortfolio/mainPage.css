@@ -1,8 +1,24 @@
+.scrollDownLateral {
+  display: flex;
+  justify-content: end;
+  width: 97%;
+}
+
+.scrollDownLateralh1 {
+  color: white;
+  margin: 0px 0;
+}
+
+.arrow {
+  margin-bottom: -6px;
+}
+
 .landingPageLottie {
   display: flex;
   justify-content: center;
   margin-bottom: 0px;
   margin-top: -70px;
+  width: 90%;
 }
 
 .wellcome-all {
