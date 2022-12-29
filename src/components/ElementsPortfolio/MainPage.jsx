@@ -40,6 +40,15 @@ export function MainPage() {
           ecommerce lleno de animaciónes e interacciones.
         </p>
       </div>
+      <div className="front-page-container">
+        <a href="https://casa-branca.vercel.app/" target="_blank">
+          <img
+            src="/img/CasaBranca.jpg"
+            alt="casa branca page"
+            className="front-pages"
+          />
+        </a>
+      </div>
       <div>
         <h2 className="project-titles">
           Nike Store{" "}
