@@ -1,7 +1,6 @@
 import { motion, useScroll } from "framer-motion";
 import LandingPageLottie from "./lottieComponents/landingPageLottie";
 import ScrollDown from "./lottieComponents/ScrollDown";
-import SoundBigScreen from "./lottieComponents/SoundBigScreen";
 import WellcomeAll from "./lottieComponents/WellcomeAll";
 import { BsGithub } from "react-icons/bs";
 import Projects from "./lottieComponents/Projects";
@@ -14,7 +13,6 @@ export function MainPage() {
         <LandingPageLottie />
         <WellcomeAll />
         <ScrollDown />
-        <SoundBigScreen />
       </div>
       <div className="my-projects-container">
         <h2 className="my-projects">Mis Proyectos</h2>

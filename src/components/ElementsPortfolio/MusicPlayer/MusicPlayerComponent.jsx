@@ -2,6 +2,7 @@ import { useState, useRef } from "react";
 import song from "./7_MinutosPCh.mp3";
 import ControlPanel from "./controls/ControlPanel";
 import PlaySong from "../lottieComponents/PlaySong";
+import SoundBigScreen from "../lottieComponents/SoundBigScreen";
 
 const MusicPlayerComponent = () => {
   const [percentage, setPercentage] = useState(0);
@@ -40,7 +41,6 @@ const MusicPlayerComponent = () => {
   return (
     <>
       <div className="app-container">
-        {/* <Slider percentage={percentage} onChange={onChange} /> */}
         <audio
           ref={audioRef}
           onTimeUpdate={getCurrDuration}
@@ -58,7 +58,8 @@ const MusicPlayerComponent = () => {
           currentTime={currentTime}
         />
       </div>
-      <PlaySong />
+      {!isPlaying && <PlaySong />}
+      {isPlaying && <SoundBigScreen />}
     </>
   );
 };

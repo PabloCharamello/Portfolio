@@ -50,7 +50,6 @@ export function SceneContainer() {
     <>
       <HugeScreen />
       <StereoHugeScreen />
-
       <MusicPlayer />
       <Suspense fallback={null}>
         <Environment background={"only"} files={"textures/bg.hdr"} />
