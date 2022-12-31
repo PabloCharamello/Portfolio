@@ -3,7 +3,7 @@ import LandingPageLottie from "./lottieComponents/landingPageLottie";
 import ScrollDown from "./lottieComponents/ScrollDown";
 import SoundBigScreen from "./lottieComponents/SoundBigScreen";
 import WellcomeAll from "./lottieComponents/WellcomeAll";
-import { DiGithubAlt } from "react-icons/di";
+import { BsGithub } from "react-icons/bs";
 import Projects from "./lottieComponents/Projects";
 
 export function MainPage() {
@@ -28,7 +28,7 @@ export function MainPage() {
               href="https://github.com/PabloCharamello/Casa_Branca"
               target="_blank"
             >
-              <DiGithubAlt size="3.5rem" className="github-icon" />
+              <BsGithub size="3.5rem" className="github-icon" />
             </a>
           </span>
         </h2>
@@ -57,7 +57,7 @@ export function MainPage() {
               href="https://github.com/PabloCharamello/NikeStore"
               target="_blank"
             >
-              <DiGithubAlt size="3.5rem" className="github-icon" />
+              <BsGithub size="3.5rem" className="github-icon" />
             </a>
           </span>
         </h2>
@@ -83,7 +83,7 @@ export function MainPage() {
               href="https://github.com/PabloCharamello/Final-project-Ecommerce-Front-Team1"
               target="_blank"
             >
-              <DiGithubAlt size="3.5rem" className="github-icon" />
+              <BsGithub size="3.5rem" className="github-icon" />
             </a>
           </span>
         </h2>
@@ -114,7 +114,7 @@ export function MainPage() {
               href="https://github.com/PabloCharamello/HackFlix"
               target="_blank"
             >
-              <DiGithubAlt size="3.5rem" className="github-icon" />
+              <BsGithub size="3.5rem" className="github-icon" />
             </a>
           </span>
         </h2>

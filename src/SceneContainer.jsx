@@ -1,3 +1,4 @@
+import { Suspense, useState } from "react";
 import {
   OrbitControls,
   PerspectiveCamera,
@@ -6,7 +7,6 @@ import {
   SpotLight,
 } from "@react-three/drei";
 
-import { Suspense } from "react";
 import { FloatingIsland } from "./components/FloatingIsland";
 import { Portal } from "./components/Portal";
 import { Rocks } from "./components/Rocks";
@@ -29,8 +29,7 @@ import { SceneParticles } from "./components/SceneParticles";
 import { HugeScreen } from "./components/HugeScreen";
 import { ObjectsMainScene } from "./components/ObjectsMainScene";
 import { StereoHugeScreen } from "./components/StereoHugeScreen";
-import { InteractionManager } from "three.interactive";
-import * as TWEEN from "@tweenjs/tween.js";
+import { MusicPlayer } from "./components/MusicPlayer";
 
 let lightColor = new Color(1, 0.2, 0.1);
 let mesh = new Mesh(
@@ -51,6 +50,8 @@ export function SceneContainer() {
     <>
       <HugeScreen />
       <StereoHugeScreen />
+
+      <MusicPlayer />
       <Suspense fallback={null}>
         <Environment background={"only"} files={"textures/bg.hdr"} />
         <Environment background={false} files={"textures/envmap.hdr"} />

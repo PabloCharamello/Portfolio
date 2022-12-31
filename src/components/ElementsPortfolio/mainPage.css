@@ -146,10 +146,12 @@
 }
 
 .github-icon {
+  width: 40px;
   color: rgb(247, 229, 155);
-  margin-bottom: -14px;
-  border-radius: 50px;
+  margin-bottom: -18px;
+  border-radius: 10px;
   transition: 0.15s;
+  padding: 0 10px;
 }
 
 .github-icon:hover {
