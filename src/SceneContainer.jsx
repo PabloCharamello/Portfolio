@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import {
   OrbitControls,
   PerspectiveCamera,
@@ -15,14 +15,14 @@ import { FloatingRocks } from "./components/FloatingRocks";
 import { Trees } from "./components/Trees";
 import { Words } from "./components/Words";
 import { Grass } from "./components/Grass";
-import {
-  BrightnessContrast,
-  ChromaticAberration,
-  DepthOfField,
-  EffectComposer,
-  GodRays,
-  HueSaturation,
-} from "@react-three/postprocessing";
+// import {
+//   BrightnessContrast,
+//   ChromaticAberration,
+//   DepthOfField,
+//   EffectComposer,
+//   GodRays,
+//   HueSaturation,
+// } from "@react-three/postprocessing";
 import { BlendFunction, Resizer, KernelSize } from "postprocessing";
 import { Color, CylinderGeometry, Mesh, MeshBasicMaterial } from "three";
 import { SceneParticles } from "./components/SceneParticles";
