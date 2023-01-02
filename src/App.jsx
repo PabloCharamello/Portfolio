@@ -1,46 +1,9 @@
 import { Canvas } from "@react-three/fiber";
 import { SceneContainer } from "./SceneContainer";
-// import * as THREE from "three";
 import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js";
 import "./index.css";
 import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js";
 import { ColladaLoader } from "https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/ColladaLoader.js";
-
-// THREE.DefaultLoadingManager.onStart = function (url, itemsLoaded, itemsTotal) {
-//   console.log(
-//     "Started loading file: " +
-//       url +
-//       ".\nLoaded " +
-//       itemsLoaded +
-//       " of " +
-//       itemsTotal +
-//       " files."
-//   );
-// };
-
-// THREE.DefaultLoadingManager.onLoad = function () {
-//   console.log("Loading Complete!");
-// };
-
-// THREE.DefaultLoadingManager.onProgress = function (
-//   url,
-//   itemsLoaded,
-//   itemsTotal
-// ) {
-//   console.log(
-//     "Loading file: " +
-//       url +
-//       ".\nLoaded " +
-//       itemsLoaded +
-//       " of " +
-//       itemsTotal +
-//       " files."
-//   );
-// };
-
-// THREE.DefaultLoadingManager.onError = function (url) {
-//   console.log("There was an error loading " + url);
-// };
 
 let clock, camera, scene, renderer, mixer;
 
