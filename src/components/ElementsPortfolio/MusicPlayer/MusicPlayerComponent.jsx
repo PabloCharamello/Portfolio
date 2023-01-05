@@ -44,7 +44,7 @@ const MusicPlayerComponent = () => {
         <audio
           ref={audioRef}
           onTimeUpdate={getCurrDuration}
-          autoPlay={true}
+          autoPlay={false}
           loop={true}
           onLoadedData={(e) => {
             setDuration(e.currentTarget.duration.toFixed(2));
