@@ -19,12 +19,38 @@
   margin-bottom: 0px;
   margin-top: -70px;
   width: 90%;
+  color: white;
 }
 
 .wellcome-all {
   display: flex;
   justify-content: center;
   margin-top: -40px;
+}
+
+.contact-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-me {
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  margin-bottom: 10px;
+  color: #f7e59b;
+  display: flex;
+  justify-content: center;
+}
+
+.links:hover {
+  background-color: orange;
 }
 
 .scrollDown {
