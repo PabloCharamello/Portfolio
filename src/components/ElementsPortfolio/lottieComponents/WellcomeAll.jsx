@@ -26,7 +26,7 @@ const WellcomeAll = () => {
         <a
           className="links"
           target={"_blank"}
-          href="https://www.pablocharamello@gmail.com"
+          href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNxNpCHPMzgKbnbQpZMCwmLjtSKDsvMDjHSZZcNkpHvkRKwXZQzHrwFBhFSzcgZVVpVcBB"
         >
           Mi correo
         </a>
